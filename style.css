@@ -1,0 +1,333 @@
+/*
+Theme Name: AF Blue
+Theme URI: http://www.farsi.it
+Description: Theme for WordPress of AF Lab
+Version: 0.8
+Author: Action Farsi
+*/
+
+
+body {
+	background-color: #FFFFFF;
+	background-image: url(images/backtile.gif);
+	background-position: left;
+	background-repeat: repeat-y;
+	margin: 0px;
+	padding: 0px;
+}
+
+a, a:link{
+	color:#002C4D;
+	text-decoration: none;
+	border-bottom-color: #002C4D;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+}
+
+a:hover{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #002C4D;
+
+}
+
+h2 a{
+	color: #FFFFFF;
+	text-decoration: none;
+	border: none;
+}
+
+h2 a:hover{
+    color: #002C4D;
+	text-decoration: none;
+	border: none;	
+}
+
+h2 {
+	font-family: Arial Black, Helvetica, sans-serif;
+	font-size:large;
+	margin:0px;
+}
+
+#header{
+	background-image: url(images/header-tile.gif);
+	background-repeat: repeat-x;
+	height: 178px;
+	margin:0px;
+	padding:0;
+	color : #FFFFFF;
+}
+
+#header-gif {
+	background-image: url(images/header.gif);
+	background-position: left;
+	height: 178px;
+	margin:0px;
+	top: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+}
+
+#header-menu {
+	margin-left: 15px;
+	margin-top: 15px;
+	font-size:medium;
+	text-transform: lowercase;
+}
+
+#sidebar {
+	float: left;
+	padding-left: 54px;
+	width: 178px;
+	color: #FFFFFF;
+	font-family: "Gill Sans Bold", "Arial Black";
+}
+
+#sidebar ul{
+	line-height: 18px;
+	list-style-type: none;
+	padding-left:4px;
+	margin:2px;
+	padding-right:7px;
+}
+
+.children{
+	line-height: 16px;
+	font-size: small;
+	color: #DDDDDD;
+	margin-left: 10px; 
+	padding-bottom: 3px;
+}
+
+#sidebar a{
+	color: #FFFFFF;
+	text-decoration: none;
+	border: none;
+}
+
+#sidebar a:hover{
+	color: #002C4D;
+	text-decoration: none;
+	border: none;	
+}
+
+.sidebar-top {
+	background-image: url(images/menu-top.gif);
+	background-repeat: no-repeat;
+	width: 178px;
+	height: 5px;
+	background-position: bottom;
+}
+
+.sidebar-middle {
+	background-image: url(images/menu-tile.gif);
+	background-repeat: repeat-y;
+	width: 178px;
+	padding: 4px;
+}
+
+.sidebar-bottom {
+	background-image: url(images/menu-bottom.gif);
+	background-repeat: no-repeat;
+	width: 178px;
+	height: 20px;
+	background-position: top;
+}
+
+#content{
+	margin-left: 250px;
+	margin-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #000000;
+	
+}
+.bar{
+	background-color:#0066B3;
+	border-left:4px solid #45A1E6;
+	border-top:4px solid #45A1E6;
+	color:#ffffff;
+	font-size:small;
+	height:20px;
+	margin-bottom:15px;
+	margin-top:-15px;
+	vertical-align: bottom;
+	width:600px;
+}
+
+.bar-title{
+	background-color:#45A1E6;
+	padding:1px;
+	font-size: medium;
+}
+.post{
+	margin-left: 20px;
+	border-left-width: 3px;
+	border-left-color: #45A1E6;
+	border-left-style: solid;
+	margin-bottom: 30px;
+	padding-right: 4px;
+	width: 600px;
+}
+
+.post-top{
+	background-color: #45A1E6;
+	color: #FFFFFF;
+	height: 38px;
+	padding: 4px;
+	line-height: 18px;
+	vertical-align: middle;
+	
+}
+
+.logo{
+	position: relative;
+	left: -4px;
+	top: 0px;
+	float: left;
+	margin-right: 5px;
+}
+
+.post p {
+	margin-bottom:8px;
+	margin-top:3px;
+}
+
+.post-top a{
+	color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	text-decoration: none;
+	border: none;
+}
+
+.post-author{
+	background-color: #0066B3;
+	padding: 4px;
+	font-weight: bold;
+	color: #002C4D;
+	font-size: small;
+	font-style: italic;
+		height: 25px;
+}
+
+.post-entry{
+	padding: 5px;
+	text-align: justify;
+}
+
+.post-entry img{
+	margin: 5px;
+}
+
+#category{
+	margin-left: 20px;
+	border-left-width: 3px;
+	border-left-color: #45A1E6;
+	border-left-style: solid;
+	margin-bottom: 30px;
+	margin-right: 50px;
+	padding-right: 4px;
+	width: 600px;
+}
+
+.category-list{
+	margin: 0px; 
+	padding: 0px;
+	padding-bottom: 30px;
+}
+
+#category-top{
+    background-color: #45A1E6;
+	color: #FFFFFF;
+	height: 38px;
+	padding: 4px;
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+#category-text{
+	background-color: #0066B3;
+	padding: 4px;
+	padding-right: 20px;
+	font-weight: bold;
+	color:#F5FAFC;
+	font-style: italic;
+	min-height: 40px;
+	text-align: justify;
+}
+
+.category-elem{
+	background-color: #F5FAFC;
+	padding : 4px;
+	padding-top: 2px;
+	margin: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top:5px;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	font-weight: bold;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-color: #45A1E6;
+	border-right-color: #45A1E6;
+	border-bottom-color: #45A1E6;
+	border-left-color: #45A1E6;
+
+}
+
+ #thecomments{
+	margin-left: 20px;
+	border-left-width: 3px;
+	border-left-color: #45A1E6;
+	border-left-style: solid;
+	margin-bottom: 30px;
+	padding-left: 5px;
+	width: 600px;
+}
+
+#comments {
+	background: #45A1E6;
+	color:#FFFFFF;
+	margin-left:-5px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.commentlist li{
+	border-left-width: 3px;
+	border-left-color: #0066B3;
+	border-left-style: solid;
+	padding-left: 5px;
+}
+
+.avatar-32{
+	float: left;
+	margin: 6px;
+}
+
+/* From WPRESS default */
+
+.alignleft{
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright{
+	float: right;
+	margin-left: 15px;
+}
+
+.wp-caption-text{
+	text-align: center;
+	font-size: small;
+	margin:1px;
+	padding:1px;
+	border-color: #002C4D;
+	border-width: 1px;
+	border-style: dashed;
+}
