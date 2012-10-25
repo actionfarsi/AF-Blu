@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="row">
 <?php get_sidebar(); ?>
 <div id="container"> 
   
@@ -43,9 +44,7 @@
       <br />
    
   </div>
-  <hr id="clear" />
+  <div id="clear" />
+</div>
 </div>
 <?php get_footer(); ?>
-</div>
-</body>
-</html>

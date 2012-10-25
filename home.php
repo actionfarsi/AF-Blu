@@ -1,11 +1,9 @@
 <?php get_header(); ?>
+<div class="row">
 <?php get_sidebar(); ?>
 <div id="container"> 
   
   <div id="content">
-	<div class="bar">
-	<span class="bar-title">Recent Achievement: </span><?php echo end(get_post_meta(279, "Achievement", false));?>
-	</div>
     <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
     <div class="post" id="post-<?php the_ID(); ?>"> 
@@ -46,6 +44,7 @@
       <br />
    
   </div>
-  <hr id="clear" />
+  <div id="clear" />
+</div>
 </div>
 <?php get_footer(); ?>

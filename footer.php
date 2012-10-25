@@ -14,9 +14,11 @@
   </script>
   <script>
 	$(function() {
-		$( "#accordion" ).accordion({
+		$( "#sidebar" ).accordion({
 			collapsible: true,
-            active: false
+            active: false,
+            autoHeight: false,
+            selector: ".sidebar-h.a"
 		});
 	});
 	</script>

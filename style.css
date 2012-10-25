@@ -6,14 +6,24 @@ Version: 0.8
 Author: Action Farsi
 */
 
-
+@font-face {
+  font-family: Gil;
+  src: url("/GILSANUB.ttf");
+}
+ 
+html {
+	height: 100%;
+}
+ 
 body {
-	background-color: #FFFFFF;
-	background-image: url(images/backtile.gif);
-	background-position: left;
-	background-repeat: repeat-y;
 	margin: 0px;
 	padding: 0px;
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
 }
 
 a, a:link{
@@ -28,7 +38,16 @@ a:hover{
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #002C4D;
+}
 
+h1{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    height: 60px;
+    font-size: 4em;
+    text-shadow: -1px 2px 4px #002C4D, 1px -2px 4px #555;
 }
 
 h2 a{
@@ -50,37 +69,41 @@ h2 {
 }
 
 #header{
-	background-image: url(images/header-tile.gif);
-	background-repeat: repeat-x;
-	height: 178px;
 	margin:0px;
-	padding:0;
+	padding:10px;
+    min-height: 100px;
 	color : #FFFFFF;
-}
+    background-color: #0066B3;
+    border-bottom: 15px solid #45A1E6;}
 
-#header-gif {
-	background-image: url(images/header.gif);
-	background-position: left;
-	height: 178px;
-	margin:0px;
-	top: 0px;
-	padding: 0px;
-	background-repeat: no-repeat;
+#header-gif{
+	width: 300px;
+    display: inline-block;
 }
 
 #header-menu {
 	margin-left: 15px;
 	margin-top: 15px;
-	font-size:medium;
+	font-size: medium;
 	text-transform: lowercase;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #sidebar {
-	float: left;
-	padding-left: 54px;
-	width: 178px;
-	color: #FFFFFF;
-	font-family: "Gill Sans Bold", "Arial Black";
+	display: inline-block;
+    vertical-align: top;
+    padding: 4px 7px;
+    margin-right: 200px;
+    margin-top: 0px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: "Gill Sans Bold", "Arial Black";
+    background: #0066B3;
+    border-left: 7px solid #45A1E6;
+    border-right: 3px solid #002C4D;
+    width: 20px;
 }
 
 #sidebar ul{
@@ -106,37 +129,30 @@ h2 {
 }
 
 #sidebar a:hover{
-	color: #002C4D;
+	color: #0066B3;
 	text-decoration: none;
 	border: none;	
 }
 
-.sidebar-top {
-	background-image: url(images/menu-top.gif);
-	background-repeat: no-repeat;
-	width: 178px;
-	height: 5px;
-	background-position: bottom;
-}
-
 .sidebar-middle {
-	background-image: url(images/menu-tile.gif);
-	background-repeat: repeat-y;
 	width: 178px;
-	padding: 4px;
+    padding: 4px;
+    margin: 7px 3px;
+    background-color: #002C4D;
+    box-shadow: 2px 2px 3px 0px #002C4D;
+    border: 1px solid black;
 }
 
-.sidebar-bottom {
-	background-image: url(images/menu-bottom.gif);
-	background-repeat: no-repeat;
-	width: 178px;
-	height: 20px;
-	background-position: top;
+#container{
+    margin-top:20px;
+    display: inline-block;
+    width: 100%;
+    min-width: 350px;
+    max-width: 700px;
 }
 
 #content{
-	margin-left: 250px;
-	margin-top: 5px;
+	margin: 5px 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: small;
 	color: #000000;
@@ -148,11 +164,11 @@ h2 {
 	border-top:4px solid #45A1E6;
 	color:#ffffff;
 	font-size:small;
-	height:20px;
+	min-height:20px;
 	margin-bottom:15px;
 	margin-top:-15px;
 	vertical-align: bottom;
-	width:600px;
+	
 }
 
 .bar-title{
@@ -160,6 +176,7 @@ h2 {
 	padding:1px;
 	font-size: medium;
 }
+
 .post{
 	margin-left: 20px;
 	border-left-width: 3px;
@@ -167,7 +184,7 @@ h2 {
 	border-left-style: solid;
 	margin-bottom: 30px;
 	padding-right: 4px;
-	width: 600px;
+	background-color: #F9F9FD;
 }
 
 .post-top{
@@ -207,7 +224,7 @@ h2 {
 	color: #002C4D;
 	font-size: small;
 	font-style: italic;
-		height: 25px;
+	height: 25px;
 }
 
 .post-entry{
@@ -217,6 +234,10 @@ h2 {
 
 .post-entry img{
 	margin: 5px;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px 0px #002C4D;
+    border: 1px solid #002C4D;
 }
 
 #category{
@@ -227,7 +248,7 @@ h2 {
 	margin-bottom: 30px;
 	margin-right: 50px;
 	padding-right: 4px;
-	width: 600px;
+
 }
 
 .category-list{
@@ -286,7 +307,7 @@ h2 {
 	border-left-style: solid;
 	margin-bottom: 30px;
 	padding-left: 5px;
-	width: 600px;
+    background-color: #F9F9FD;
 }
 
 #comments {
@@ -314,12 +335,24 @@ h2 {
 
 .alignleft{
 	float: left;
-	margin-right: 15px;
+	margin: 12px;
 }
 
 .alignright{
 	float: right;
-	margin-left: 15px;
+	margin: 12px;
+}
+
+.size-small{
+    max-width: 30%;
+}
+
+.size-medium{
+    max-width: 50%;
+}
+
+.size-large{
+    max-width: 80%;
 }
 
 .wp-caption-text{

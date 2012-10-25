@@ -10,6 +10,7 @@
 <?php wp_title(); ?>
 </title>
 <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=3., user-scalable=yes" />
 <!-- leave this for stats -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -23,13 +24,16 @@
 
 <div id="header"> 
     <div id="header-gif"> 
-      <h2><span id="header-menu"><a href="<?php bloginfo('url'); ?>">home</a> -
-        <a href="http://www.farsi.it/album/index.php">gallery</a> -
-        <a href="http://www.farsi.it/quantum/">official</a> -
-        <a href="http://www.google.com/search?hl=en&source=hp&q=alessandro+farsi&aq=f&oq=&aqi=">elsewhere</a>
-        </span></h2>
+      <a href="<?php bloginfo('url'); ?>"><h1>Farsilab</h1></a>
     </div>
+    <div id="header-menu"><h2><a href="<?php bloginfo('url'); ?>">home</a> -
+        <!--<a href="http://www.farsi.it/album/index.php">gallery</a> -
+        <a href="http://www.farsi.it/quantum/">official</a> - -->
+        <a href="http://www.google.com/search?hl=en&source=hp&q=alessandro+farsi&aq=f&oq=&aqi=">elsewhere</a>
+    </h2></div>
+<div class='clear'></div>
 </div>
+
   <!--<a href="<?php bloginfo('url'); ?>">
     <?php bloginfo('name'); ?>
     </a></h1>-->

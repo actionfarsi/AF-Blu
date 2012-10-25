@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="row">
 <?php get_sidebar(); ?>
 <div id="container">
   <div id="content">

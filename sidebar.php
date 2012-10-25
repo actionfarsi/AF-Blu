@@ -1,28 +1,33 @@
 <div id="sidebar">
-<div class="sidebar-top"></div>
- <div class="sidebar-middle"><ul>
-        <?php wp_list_categories('title_li='); ?>
-		</ul>
+    <div class="sidebar-middle">
+    <a class="sidebar-h" href="#">Categories</a></div>
+    <div class="sidebar-middle" >
+        <ul><?php wp_list_categories('title_li=&exclude=38'); ?></ul>
+    </div>
+ 
+    
+    <div class="sidebar-middle"><a  class="sidebar-h" href="#">Links</a></div>
+    <div class="sidebar-middle">
+    <ul><?php wp_list_bookmarks('title_after=&title_before='); ?></ul>
+    </div>
+    <div class="sidebar-middle"><a class="sidebar-h" href="#">Archives</a></div>
+    <div class="sidebar-middle"><?php wp_get_archives('type=yearly'); ?></div>
+    
+ 
+<!--
+<?php if ( function_exists('dynamic_sidebar') ): ?>
+<div class="sidebar-middle">
+<a  class="sidebar-h" href="#">Others</a></div>
+<div class="sidebar-middle">
+    <?php dynamic_sidebar(); ?>
 </div>
-<div class="sidebar-bottom"></div>
+<?php endif; ?> -->
 
-<div class="sidebar-top"></div>
- <div class="sidebar-middle"><ul>
-        <?php wp_list_bookmarks('title_after=&title_before='); ?>
-		</ul>
-</div>
-<div class="sidebar-bottom"></div>
+    <div class="sidebar-middle">
+    <a class="sidebar-h" href="#">Meta</a>
+    </div>
 
-<?php if ( function_exists('dynamic_sidebar') ):?>
-<div class="sidebar-top"></div>
- <div class="sidebar-middle">
-<?php dynamic_sidebar(); ?>
-</div>
-<div class="sidebar-bottom"></div>
-<?php endif; ?>
-
-<div class="sidebar-top"></div>
-<div class="sidebar-middle"> 
+    <div class="sidebar-middle"> 
      <?php _e('Meta'); ?>
       <ul>
         <?php wp_register(); ?>
@@ -34,8 +39,8 @@
         </li>
 		<?php wp_meta(); /* do not remove this line */ ?>
         </ul>
+    
   </div>
-<div class="sidebar-bottom"></div>
 
-<div style="clear:both;"></div>
+<!--<div class="clear"></div>-->
 </div>
