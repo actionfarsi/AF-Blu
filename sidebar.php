@@ -1,17 +1,17 @@
 <div id="sidebar">
     <div class="sidebar-middle">
     <a class="sidebar-h" href="#">Categories</a></div>
-    <div class="sidebar-middle" >
+    <div class="sidebar-middle sidebar-m2" >
         <ul><?php wp_list_categories('title_li=&exclude=38'); ?></ul>
     </div>
  
     
     <div class="sidebar-middle"><a  class="sidebar-h" href="#">Links</a></div>
-    <div class="sidebar-middle">
+    <div class="sidebar-middle  sidebar-m2">
     <ul><?php wp_list_bookmarks('title_after=&title_before='); ?></ul>
     </div>
     <div class="sidebar-middle"><a class="sidebar-h" href="#">Archives</a></div>
-    <div class="sidebar-middle"><?php wp_get_archives('type=yearly'); ?></div>
+    <div class="sidebar-middle  sidebar-m2"><?php wp_get_archives('type=yearly'); ?></div>
     
  
 <!--

@@ -5,6 +5,7 @@
   <div id="content"> 
     
         <?php the_post(); ?>
+        <div class="post" id="post-<?php the_ID(); ?>"> 
 		<h2>
           <?php the_title(); ?>
           </h2>
@@ -17,16 +18,12 @@
             <?php the_category(', ') ?>
             <strong>|</strong> 
             <?php edit_post_link('Edit','','<strong> | </strong>'); ?>
-            <?php comments_popup_link('No comments &raquo;', '1 comment &raquo;', '% comments &raquo;'); ?>
           </p>
         </div>
-      
-      <?php comments_template(); ?>
-	  
-      <br />
+      </div>
    
   </div>
-  <hr id="clear" />
+  <div id="clear" />
 </div>
 </div>
 <?php get_footer(); ?>

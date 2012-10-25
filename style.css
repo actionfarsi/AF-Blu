@@ -94,16 +94,18 @@ h2 {
 	display: inline-block;
     vertical-align: top;
     padding: 4px 7px;
-    margin-right: 200px;
+    margin-right: 140px;
     margin-top: 0px;
     margin-left: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     color: white;
     font-family: "Gill Sans Bold", "Arial Black";
+    font-size: 1.2em;
     background: #0066B3;
     border-left: 7px solid #45A1E6;
+    border-bottom: 3px solid #002C4D;
     border-right: 3px solid #002C4D;
-    width: 20px;
+    width: 30px;
 }
 
 #sidebar ul{
@@ -143,10 +145,14 @@ h2 {
     border: 1px solid black;
 }
 
+.sidebar-m2{
+    margin-left: 10px;
+}
+
 #container{
     margin-top:20px;
     display: inline-block;
-    width: 100%;
+    width: 95%;
     min-width: 350px;
     max-width: 700px;
 }
@@ -185,6 +191,7 @@ h2 {
 	margin-bottom: 30px;
 	padding-right: 4px;
 	background-color: #F9F9FD;
+    overflow: auto;
 }
 
 .post-top{
@@ -229,6 +236,7 @@ h2 {
 
 .post-entry{
 	padding: 5px;
+    margin: 10px;
 	text-align: justify;
 }
 

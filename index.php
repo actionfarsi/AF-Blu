@@ -34,8 +34,8 @@
 	  
       <?php endwhile; ?>
       <p align="center"> 
-        <?php next_posts_link('&laquo; Precedenti') ?>
-        <?php previous_posts_link('Successivi &raquo;') ?>
+        <?php next_posts_link('&laquo; Previous') ?>
+        <?php previous_posts_link('Next &raquo;') ?>
       </p>
       <?php else : ?>
       <h2 align="center">Not Found</h2>
